@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+button{
+    cursor:pointer;
+}
+/*      nav bar     */
+.nav-container{
+    background-color: #ffffff;
+    height:10vh;
+    font-family:"Roboto";
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.nav-image-logo{
+    height:50px;
+}
+.nav-items-container{
+    display: flex;
+    flex-direction: row;
+    font-size:15px;
+    list-style-type:none;
+    padding-left:0;
+    font-family:"Roboto";
+    margin-right:auto;
+}
+.nav-item{
+    color:#172B4D;
+    margin-left:10px;
+    margin-right:10px;
+    text-align: center;
+    padding:5px;
+    font-size:16px;
+}
+.nav-item:hover{
+    color:#0065ff;
+}
+.nav-login-button{
+    padding:5px;
+    text-align: center;
+    font-size:18px;
+    color:#172B4D;
+    background-color: white;
+    border-width:0;
+    padding-right:15px;
+}
+.nav-get-free-button{
+    color:white;
+    background-color: #0065ff;
+    padding:5px;
+    height:10vh;
+    border-width:0;
+    font-family: "Roboto";
+    padding:5px;
+    font-size:18px;
+    padding-left:15px;
+}
+
+.nav-small-dev-icon{
+    display: none;
+}
+
+.nav-items-container2{
+    padding-left:0;
+    font-family:"Roboto";
+}
+.nav-item2{
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid grey;
+    margin-left:5px;
+    margin-right:5px;
+}
+.nav-buttons-container2{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nlb2{
+    border:1px solid blue;
+    margin-top:10px;
+    padding:10px;
+}
+.nlb2:hover{
+    background-color:lightblue;
+}
+
+.dis{
+    display: none;
+}
+
+.sm-nav-cont{
+    display:none;
+}
+.seemore,.closes{
+    background-color: transparent;
+    border-width:0;
+}
+.closes{
+    margin-right:15px;
+}
+
+@media (min-width:320px) and (max-width:1023px){
+    .nav-items-container,.nav-buttons-container{
+        display: none;
+    }
+    .nav-small-dev-icon{
+        display: inline;
+        margin-right:15px;
+    }
+}
+@media (min-width:1023px){
+    .nav-items-container,.nav-buttons-container{
+        display: flex;
+    }
+    .nav-small-dev-icon{
+        color:white;
+    }
+    .sm-nav-cont{
+        display: none;
+    }
+}
+.par1{
+    font-family: "Roboto";
+    background-color: #deebff;
+    padding:20px;
+    text-align: center;
+    color:#172B4D;
+    margin:0;
+}
+.learnmore{
+    color:#0052CC;
+    text-decoration: underline;
+
+}
+/* Home page Styles */
+.card1{
+    text-align: center;
+    background-image: linear-gradient(to right, #6b45ac,#dc4fb3);
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:0px;
+    margin-top:0;
+}
+
+.inner-card1{
+    width:100%;
+    font-family: "Roboto";
+    color:white;
+    width:90%;
+}
+
+.email-input{
+    height:50px;
+    padding:16px;
+    border-radius:5px;
+    border:none;
+    outline:none;
+    width:40%;
+    font-size:16px;
+    display: none;
+}
+.signupbtn{
+    background-color: #0065ff;
+    padding:16px;
+    border-width:0;
+    border-radius:5px;
+    color:white;
+    font-size:16px;
+    margin-left:5px;
+    width:70%;
+    margin-bottom:25px;
+    height:50px;
+}
+.flexi{
+    display: flex;
+    justify-content: center;
+}
+
+.home-img{
+    height:320px;
+    width:320px;
+}
+@media (min-width:768px){
+    .home-img{
+        height:500px;
+        width:600px;
+    }
+    .email-input{
+        display: flex;
+        width:50%;
+    }
+    .signupbtn{
+        width:35%;
+    }
+    
+}
+@media (min-width:1024px) {
+    .home-img{
+        height:500px;
+        width:500px;
+    }
+    .email-input{
+        display: flex;
+    }
+    .inner-card1{
+        width:50%;
+    }
+    .card1{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card1-heading{
+        font-size:36px;
+    }
+    .card1-par{
+        font-size:18px;
+    }
+    .signupbtn{
+        width:30%;
+    }
+}
+
+/* TRELLO 101*/
+.trello-cont1{
+    padding:20px;
+    font-family:"Roboto";
+    min-height:80vh;
+    background-image: linear-gradient(to bottom,#ffffff,#e8fcff);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.car-img-card1{
+    background-color: white;
+    border-left:8px solid #00c7e5;
+    padding:20px;
+    margin-top:15px;
+    border-radius:8px;
+}
+h6{
+    font-weight:bold;
+}
+.flexi2{
+    display: flex;
+    justify-content: space-around;
+}
+@media (min-width:1024px){
+    .car-img-card1{
+        padding:10px;
+    }
+    .inner-trello-cont1{
+        width:90%;
+    }
+}
+
+/* Trello In Action */
+.cards-container3{
+    overflow-x:scroll;
+    display: flex;
+    width:100%;
+}
+.cont-3{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    min-height:80vh;
+    padding:20px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc3-card{
+    background-color: white;
+    box-shadow:0px 0px 8px 3px #888888;
+    border-radius:8px;
+    padding:20px;
+    border-top:40px solid #ff7452;
+    height:250px;
+    width:350px;
+    margin:10px;
+}
+.cc3-icon{
+    position:relative;
+    top:-40px;
+    border-radius:5px;
+    background-color:white;
+    padding:10px;
+    height:50px;
+    width:50px;
+}
+.cc3-heading,.cc3-par{
+    position:relative;
+    top:-20px;
+    color:#172B4D;
+    margin-top:0;
+}
+.cc3-b1{
+    border-color:#ff7452;
+
+}
+.cc3-b2{
+    border-color:#2684ff;
+}
+.cc3-b3{
+    border-color:#57d9a3;
+}
+.cc3-b4{
+    border-color:#ffc400;
+}
+.cc3-b5{
+    border-color:#00c7e5;
+}
+.cc3-b6{
+    border-color:#f99cdb;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius:20px;
+  }
+
+.flexi3{
+    text-align:center;
+}
+.cc3-btn3{
+    border:1px solid blue;
+    border-radius:8px;
+    background-color:transparent;
+    padding:10px;
+}
+  
+@media (min-width:1024px){
+    .inner-cont3{
+        width:90%;
+        padding:10px;
+        margin:auto;
+    }
+    .flexi3{
+        display: flex;
+        justify-content: space-between;
+        font-family:"Roboto";
+    }
+    .cc3-btn3{
+        border:1px solid blue;
+        border-radius:8px;
+        background-color:transparent;
+        padding:10px;
+    }
+}
+
+/* See work in a whole new day*/
+.cont-4{
+    display: flex;
+    justify-content: center;
+    background-image:linear-gradient(to right,#0075f8,#00afdd);
+    min-height:80vh;
+    padding:20px;
+}
+.inner-cont-4{
+    width:90%;
+    color:white;
+}
+.ic4-btn4{
+    background-color:white;
+    padding:10px;
+    text-align: center;
+    border-radius:5px;
+    border-width:0;
+}
+.ic4-card{
+    background-color: white;
+    border-radius:8px;
+    padding:20px;
+    color:#172B4D;
+    text-align:justify;
+    font-family:"Roboto";
+    font-size:18px;
+}
+@media (min-width:1024px){
+    .ic4-card{
+        display: flex;
+        justify-content:space-between;
+    }
+}
+
+/* Powerful ways to grow */
+.cont-5{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top:20px;
+}
+.inner-cont-5{
+    width:90%;
+}
+.ic5-card{
+    background-color:#fafbfc;
+    font-family:"Roboto";
+    border-radius:8px;
+    padding:20px;
+}
+h5{
+    font-weight:bold;
+}
+
+/* Trello Priced your way */
+.bg5{
+    background-color:#e7fcff;
+    text-align:center;
+    font-family:"Roboto";
+    width:100%;
+    padding:20px;
+}
+.ic6-card{
+    height:500px;
+    background-color:white;
+    border:1px solid grey;
+    padding:20px;
+    text-align: left;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.button6{
+    border:1px solid aqua;
+    padding:10px;
+    background-color:transparent;
+    border-radius:5px;
+}
+@media (min-width:1024px){
+.ic6-card-cont{
+    display: flex;
+}
+.ic6-card{
+    width:30%;
+}
+}
+
+/* last before section */
+.bg7{
+    text-align: center;
+    background-image: linear-gradient(to right, #6b45ac,#dc4fb3);
+    min-height:30vh;
+    width:100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:0;
+    color:white;
+}
+@media (max-width:767px){
+    .button7{
+        width:90%;
+    }
+}
+/* footer */
+.bg8{
+    min-height:30vh;
+    background-color:#172B4D;
+    color:white;
+    font-family:"Roboto";
+    padding:20px;
+}
+@media (max-width:1024px){
+.foo1{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.foo-logo{
+    height:40px;
+}
+.foo2{
+    margin-top:5px;
+    border-bottom:2px solid grey;
+}
+
+}
+
+
+@media (min-width:1024px){
+.foo-inner-cont{
+    display:flex;
+}
+}
+.foo-inner-cont{
+    border-bottom:1px solid grey;
+}
+.foo-cont{
+    list-style-type:none;
+    padding-left:0;
+}
+.foo-item{
+    border:2px solid white;
+    border-radius:50%;
+    height:30px;
+    width:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width:1024px){
+    .foo23{
+        display:flex;
+        justify-content: space-between;
+    }
+    .foo-cont{
+        display: flex;
+        justify-content: space-between;
+    }
+    .foo-item{
+        display:flex;
+        margin-left:5px;
+        margin-right:5px;
+    }
+}
